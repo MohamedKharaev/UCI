@@ -1,0 +1,34 @@
+ierarchy" toBeRendered="false" ref="_Q1w_CCyuEeeyr5Re27-PxA"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_Q1uiuCyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.internal.ui.ToolsFolderView" containerData="5000" selectedElement="_Q1uiuSyuEeeyr5Re27-PxA">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiuSyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.ui.VariableView" ref="_Q1w-9iyuEeeyr5Re27-PxA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiuiyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.ui.BreakpointView" ref="_Q1w--yyuEeeyr5Re27-PxA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiuyyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.ui.ExpressionView" toBeRendered="false" ref="_Q1w_ACyuEeeyr5Re27-PxA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Q1uivCyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.ui.RegisterView" toBeRendered="false" ref="_Q1w_ASyuEeeyr5Re27-PxA"/>
+                </children>
+              </children>
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Q1uivSyuEeeyr5Re27-PxA" containerData="5681" selectedElement="_Q1uiviyuEeeyr5Re27-PxA" horizontal="true">
+                <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiviyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_Q1vxUSyuEeeyr5Re27-PxA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_Q1uivyyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.internal.ui.OutlineFolderView" containerData="2500" selectedElement="_Q1uiwCyuEeeyr5Re27-PxA">
+                  <tags>org.eclipse.e4.secondaryNavigationStack</tags>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiwCyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.views.ContentOutline" ref="_Q1w_AiyuEeeyr5Re27-PxA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiwSyuEeeyr5Re27-PxA" elementId="org.eclipse.ant.ui.views.AntView" toBeRendered="false" ref="_Q1w_BSyuEeeyr5Re27-PxA"/>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_Q1uiwiyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.internal.ui.ConsoleFolderView" containerData="2500" selectedElement="_Q1uiwyyuEeeyr5Re27-PxA">
+              <tags>org.eclipse.e4.secondaryDataStack</tags>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiwyyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.console.ConsoleView" ref="_Q1wX0yyuEeeyr5Re27-PxA"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uixCyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.views.TaskList" ref="_Q1w-7iyuEeeyr5Re27-PxA"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uixSyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_Q1w-7CyuEeeyr5Re27-PxA"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uixiyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.views.PropertySheet" toBeRendered="false" ref="_Q1w-7yyuEeeyr5Re27-PxA"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uixyyuEeeyr5Re27-PxA" elementId="org.eclipse.jdt.debug.ui.DisplayView" toBeRendered="false" ref="_Q1w_BiyuEeeyr5Re27-PxA"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiyCyuEeeyr5Re27-PxA" elementId="org.eclipse.search.SearchResultView" toBeRendered="false" ref="_Q1w_CSyuEeeyr5Re27-PxA"/>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_Q1uiySyuEeeyr5Re27-PxA" elementId="stickyFolderRight" toBeRendered="false" containerData="2500">
+        <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiyiyuEeeyr5Re27-PxA" elementId="org.eclipse.help.ui.HelpView" toBeRendered="false" ref="_Q1vxKCyuEeeyr5Re27-PxA"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiyyyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_Q1vxKyyuEeeyr5Re27-PxA"/>
+        <children xsi:type="advanced:Placeholder"

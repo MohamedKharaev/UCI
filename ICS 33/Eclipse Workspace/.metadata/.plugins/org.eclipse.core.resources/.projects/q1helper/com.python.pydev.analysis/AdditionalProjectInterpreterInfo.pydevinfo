@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q1helper\com.python.pydev.analysis\v2_indexcache
+q1solution|1491951081546563000|D:\ICS 33\Eclipse Workspace\q1helper\q1solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=q1solution
+-- END DICTIONARY
+-- START TREE 1
+11
+db1|1|db1!11@
+db2|1|db2!11@
+f|1|f!11@
+fir|1|first_quad!10@
+int|1|integrate!10@
+mov|1|movie_rank!10@
+poi|1|points!10@
+ps1|1|ps1!11@
+ps2|1|ps2!11@
+rev|1|reviewer_dict!10@
+sor|3|sorted3!10@sorted1!10@sorted2!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

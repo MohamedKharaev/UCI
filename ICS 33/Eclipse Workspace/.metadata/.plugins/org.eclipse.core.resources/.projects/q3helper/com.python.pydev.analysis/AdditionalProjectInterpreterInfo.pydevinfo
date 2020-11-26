@@ -1,0 +1,49 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q3helper\com.python.pydev.analysis\v2_indexcache
+private|1493428031517641000|D:\ICS 33\Eclipse Workspace\q3helper\private.py
+point|1493428065532340000|D:\ICS 33\Eclipse Workspace\q3helper\point.py
+-- END DISKCACHE
+-- START DICTIONARY
+9
+8=Point.__call__
+7=Point.__init__
+1=private
+4=C
+9=C.bad_add_more_attributes
+3=Point
+5=C.__init__
+6=C.add_more_attributes
+2=point
+-- END DICTIONARY
+-- START TREE 1
+4
+C|1|C!9@
+__i|1|__init__!10@
+f|1|f!10@
+poi|1|Point!17@
+-- END TREE
+-- START TREE 2
+21
+__a|1|__add__!3&18@
+__b|1|__bool__!3&18@
+__c|1|__call__!3&18@
+__g|2|__getattr__!4&10@__getitem__!3&18@
+__i|2|__init__!4&10@__init__!3&18@
+__l|1|__lt__!3&18@
+__m|1|__mul__!3&18@
+__r|2|__repr__!3&18@__rmul__!3&18@
+__s|3|__setattr__!4&10@__str__!3&18@__str__!4&10@
+a|1|a!5&11@
+add|1|add_more_attributes!4&10@
+b|1|b!5&11@
+bad|1|bad_add_more_attributes!4&10@
+bum|1|bump!4&10@
+c|1|c!6&11@
+coo|2|coordinates!7&19@coordinates!8&19@
+in_|1|in_C!4&10@
+pri|1|private_d!9&11@
+x|2|x!7&19@x!8&19@
+y|2|y!7&19@y!8&19@
+z|2|z!7&19@z!8&19@
+-- END TREE

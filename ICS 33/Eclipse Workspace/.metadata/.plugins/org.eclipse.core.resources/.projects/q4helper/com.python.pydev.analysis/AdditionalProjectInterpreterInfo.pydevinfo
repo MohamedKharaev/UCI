@@ -1,0 +1,35 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q4helper\com.python.pydev.analysis\v2_indexcache
+helpers|1493481095019000000|D:\ICS 33\Eclipse Workspace\q4helper\helpers.py
+q4solution|1493958566036625000|D:\ICS 33\Eclipse Workspace\q4helper\q4solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+1=helpers
+2=q4solution
+4=Backwardable.__init__
+3=Backwardable
+-- END DICTIONARY
+-- START TREE 1
+14
+bac|2|Backwardable_test!10@Backwardable!17@
+dif|1|differences!18@
+gro|1|group!18@
+hid|1|hide!10@
+i|1|i!19@
+in_|1|in_between!18@
+min|1|mini_Backwardable_test!18@
+nth|1|nth!10@
+onc|1|once_in_a_row!18@
+pre|1|prev!18@
+pri|1|primes!10@
+s|1|s!19@
+shu|1|shuffle!18@
+sli|1|slice_gen!18@
+-- END TREE
+-- START TREE 2
+2
+__i|2|__iter__!3&18@__init__!3&18@
+_it|1|_iterable!4&19@
+-- END TREE

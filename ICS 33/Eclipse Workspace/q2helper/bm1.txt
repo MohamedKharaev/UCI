@@ -1,0 +1,18 @@
+6pm
+6:23pm
+6:23:15am
+12am
+11:03am
+8:40:04pm
+Above should match; below should not (and of course, not this line)
+6
+6 pm
+06pm
+14pm
+6::pm
+6:60pm
+6:111pm
+6:4pm
+6: 4:pm
+6:04:7pm
+6:23:15:23am

@@ -1,0 +1,26 @@
+from collections import defaultdict
+from goody import type_as_str
+
+class Bag:
+    def __init__(self, iter: iterable):
+        self.bag_items = defaultdict(int)
+        for item in iter:
+            self.bag_items[items] += 1
+
+    def __repr__(self):
+        return_str = 'Bag(['
+        return_str += (','.join( [[item for i in range(self.bag_items[item])] for item in self.bag_items]))
+        return_str += '])'
+        return return_str
+
+if __name__ == '__main__':
+    #Put your own test code here to test Bag before doing bsc tests
+
+    print('Start simple testing')
+
+    import driver
+    driver.default_file_name = 'bsc1.txt'
+#     driver.default_show_exception =True
+#     driver.default_show_exception_message =True
+#     driver.default_show_traceback =True
+    driver.driver()

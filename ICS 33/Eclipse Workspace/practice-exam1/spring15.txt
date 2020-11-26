@@ -1,0 +1,4 @@
+Math-3A:Frank,C+:Alice,A:Bob,B:Evelyn,A-
+ICS-31:Carol,C+:David,B-:Bob,B+:Frank,C-
+English-28A:Evelyn,A:Carol,A:David,A
+ICS-6D:Bob,B:Alice,A

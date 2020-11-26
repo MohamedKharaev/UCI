@@ -1,0 +1,42 @@
+import goody
+
+
+def read_fa(file : open) -> {str:{str:str}}:
+    return_dict = {}
+    for line in file:
+        s_line = line.strip().split(';')
+        return_dict[s_line[0]] = dict(zip(s_line[1::2], s_line[2::2]))
+    return return_dict
+
+def fa_as_str(fa : {str:{str:str}}) -> str:
+    return ''.join([('  ' + t + ' transitions: ' + str([(x, fa[t][x]) for x in sorted(fa[t])]) + '\n') for t in sorted(fa)]) 
+    
+def process(fa : {str:{str:str}}, state : str, inputs : [str]) -> [None]:
+    return_list = [state]
+    for input in inputs:
+        if input not in fa[state]:
+            return_list.append((input, None))
+            break
+        return_list.append((input, fa[state][input]))
+        state = fa[state][input]
+    return return_list
+
+def interpret(fa_result : [None]) -> str:
+    return_str = ''
+    return_str += 'Starting a new FA simulation\n'
+    return_str += ''.join(('  Input = ' + s[0] + '; new state = ' + s[1] + '\n') for s in fa_result[1:])
+    return_str += 'Stop state = ' + fa_result[-1][-1]
+    return return_str
+
+
+if __name__ == '__main__':
+    # Write script here
+              
+    # For running batch self-tests
+    print()
+    import driver
+    driver.default_file_name = "bsc3.txt"
+#     driver.default_show_traceback = True
+#     driver.default_show_exception = True
+#     driver.default_show_exception_message = True
+    driver.driver()

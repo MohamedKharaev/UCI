@@ -1,0 +1,35 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q2helper\com.python.pydev.analysis\v2_indexcache
+retester|1475814260000000000|D:\ICS 33\Eclipse Workspace\q2helper\retester.py
+q2solution|1493428292449972000|D:\ICS 33\Eclipse Workspace\q2helper\q2solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=retester
+2=q2solution
+-- END DICTIONARY
+-- START TREE 1
+18
+act|1|action!11@
+bat|1|batch!10@
+com|1|commandPrompt!11@
+emb|1|embed!10@
+exp|1|expand_re!18@
+m|1|m!19@
+p|1|p!19@
+p1a|1|p1a!19@
+p1b|1|p1b!19@
+p2|1|p2!19@
+pag|1|pages!18@
+pat|1|pat!11@
+pd|1|pd!19@
+rep|1|repeat!10@
+rpl|1|rpl!11@
+tes|5|test_search!10@test_match!10@test_substitute!10@test_split!10@test_findall!10@
+tex|1|text!19@
+txt|1|txt!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

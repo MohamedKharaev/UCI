@@ -1,0 +1,36 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\practice-exam1\com.python.pydev.analysis\v2_indexcache
+exam|1493265462661675000|D:\ICS 33\Eclipse Workspace\practice-exam1\exam.py
+goody|1367342621050000000|D:\ICS 33\Eclipse Workspace\practice-exam1\goody.py
+prompt|1365396899979000000|D:\ICS 33\Eclipse Workspace\practice-exam1\prompt.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+2=exam
+3=goody
+1=prompt
+-- END DICTIONARY
+-- START TREE 1
+17
+act|1|action!11@
+ans|1|answer!19@
+che|1|check!18@
+cla|2|class_roster!18@class_averages!18@
+com|1|command_prompt!11@
+db|1|db!19@
+for|9|for_int_between!10@for_string_via_index!10@for_string!10@for_bool!10@for_int!10@for_float!10@for_num!10@for_value!10@for_char!10@
+fra|1|frange!26@
+ira|1|irange!26@
+lea|1|leading!26@
+rea|2|read_file_values!26@read_db!18@
+saf|1|safe_open!26@
+stu|3|student_scores!18@student_view!18@students!19@
+top|1|top!18@
+typ|1|type_as_str!26@
+uci|1|UCI!19@
+val|1|value!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

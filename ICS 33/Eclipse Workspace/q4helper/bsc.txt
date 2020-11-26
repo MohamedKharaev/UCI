@@ -1,0 +1,47 @@
+# Setup
+c-->from importlib import reload
+c-->import q4solution
+c-->reload(q4solution)
+c-->from goody import irange
+c-->from predicate import is_prime
+c-->from helpers import hide, primes, nth, Backwardable_test
+c-->from q4solution import differences, once_in_a_row, in_between, group, slice_gen, shuffle, Backwardable, prev
+
+# Test differences
+==-->[d for d in differences('3.14159265', '3x14129285')]-->[(2, '.', 'x'), (6, '5', '2'), (9, '6', '8')]
+==-->[d for d in differences(hide('3.14159265'), hide('3x14129285'))]-->[(2, '.', 'x'), (6, '5', '2'), (9, '6', '8')]
+==-->[d for d in differences(primes(), hide([2, 3, 1, 7, 11, 1, 17, 19, 1, 29]))]-->[(3, 5, 1), (6, 13, 1), (9, 23, 1)]
+
+# Test once_in_a_row
+e-->''.join([v for v in once_in_a_row('abcccaaabddeee')])-->abcabde
+e-->''.join([v for v in once_in_a_row(hide('abcccaaabddeee'))])-->abcabde
+e-->''.join([v for v in once_in_a_row(l.rstrip() for l in open('in_a_row.txt'))])-->xazcmlxfij
+
+# Test in_between
+e-->''.join([v for v in in_between('123abczdefalmanozstuzavuwz45z', (lambda x : x == 'a'), (lambda x : x == 'z'))])-->abczalmanozavuwz
+e-->''.join([v for v in in_between(hide('123abczdefalmanozstuzavuwz45z'), (lambda x : x == 'a'), (lambda x : x == 'z'))])-->abczalmanozavuwz
+e-->nth(in_between(primes(), (lambda x : x%10 == 3), (lambda x : x%10 == 7)),50)-->359
+e-->nth(in_between(primes(), (lambda x : x%10 == 3), (lambda x : x%10 == 7)),500)-->5647
+
+# Test group
+==-->[v for v in group('abcdefghijklm',4)]-->[['a', 'b', 'c', 'd'], ['e', 'f', 'g', 'h'], ['i', 'j', 'k', 'l']]
+==-->[v for v in group(hide('abcdefghijklm'),4)]-->[['a', 'b', 'c', 'd'], ['e', 'f', 'g', 'h'], ['i', 'j', 'k', 'l']]
+e-->nth(group(primes(),3), 50)-->[857, 859, 863]
+e-->nth(group(primes(),3),200)-->[4391, 4397, 4409]
+
+# Test slice_gen
+e-->''.join([v for v in slice_gen('abcdefghijk', 3,7,1)])-->defg
+e-->''.join([v for v in slice_gen('abcdefghijk', 3,20,1)])-->defghijk
+e-->''.join([v for v in slice_gen(hide('abcdefghijklmnopqrstuvwxyz'),3,20,3)])-->dgjmps
+==-->[p for p in slice_gen(primes(), 100,200,5)]-->[547, 577, 607, 641, 661, 701, 739, 769, 811, 839, 877, 911, 947, 983, 1019, 1049, 1087, 1109, 1153, 1193] 
+^-->[v for v in slice_gen(primes(),  3, 7, 0)]-->AssertionError
+
+# Test shuffle
+e-->''.join([c for c in shuffle('abcde','fg','hijk')])-->afhbgicjdke
+e-->''.join([c for c in shuffle(hide('abcde'), hide('fg'),hide('hijk'))])-->afhbgicjdke
+e-->nth(shuffle(primes(), primes(), primes()),100)-->139 
+e-->nth(shuffle(primes(), primes()),100)-->229 
+
+# Test Backwardable
+e-->Backwardable_test(iter(Backwardable('abcde')),'nnnpppnnnn')-->abcba^bcde
+e-->Backwardable_test(iter(Backwardable(primes())),'nnnpppnnnnnnnnppnppnnn')-->23532^35711131719231917191713171923

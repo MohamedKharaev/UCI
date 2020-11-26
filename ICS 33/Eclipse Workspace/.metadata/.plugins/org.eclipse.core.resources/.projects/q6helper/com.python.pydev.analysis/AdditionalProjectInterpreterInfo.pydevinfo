@@ -1,0 +1,54 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\q6helper\com.python.pydev.analysis\v2_indexcache
+q6solution|1495774762516924000|D:\ICS 33\Eclipse Workspace\q6helper\q6solution.py
+-- END DISKCACHE
+-- START DICTIONARY
+9
+8=LN.__init__
+2=LN
+9=OptionMenuUndo.__init__
+4=StringVar_WithHistory
+5=OptionMenuUndo
+7=TN.__init__
+1=q6solution
+3=TN
+6=StringVar_WithHistory.__init__
+-- END DICTIONARY
+-- START TREE 1
+20
+A|1|A!9@
+B|1|B!9@
+C|1|C!9@
+D|1|D!9@
+E|1|E!9@
+F|1|F!9@
+G|1|G!9@
+H|1|H!9@
+LN|1|LN!9@
+TN|1|TN!9@
+b|1|b!11@
+bas|1|bases!10@
+lis|2|list_to_ll!10@list_to_tree!10@
+ll|1|ll!11@
+mai|1|main!11@
+no_|2|no_adj_dup_r!10@no_adj_dup!10@
+omu|1|omu!11@
+opt|1|OptionMenuUndo!9@
+roo|1|root!11@
+str|3|str_tree!10@str_ll!10@StringVar_WithHistory!9@
+-- END TREE
+-- START TREE 2
+11
+__i|4|__init__!2&10@__init__!3&10@__init__!4&10@__init__!5&10@
+_hi|1|_history!6&11@
+get|1|get!5&10@
+lef|1|left!7&11@
+nex|1|next!8&11@
+res|1|result!9&11@
+rig|1|right!7&11@
+set|1|set!4&10@
+sim|1|simulate_selection!5&10@
+und|2|undo!4&10@undo!5&10@
+val|2|value!8&11@value!7&11@
+-- END TREE

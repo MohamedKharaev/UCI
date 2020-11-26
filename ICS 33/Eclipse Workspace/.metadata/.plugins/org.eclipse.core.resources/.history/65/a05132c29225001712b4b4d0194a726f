@@ -1,0 +1,43 @@
+es.PythonModuleWizard</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.folder</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.file</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.editors.wizards.UntitledTextFileWizard</tags>
+          <tags>persp.viewSC:org.python.pydev.views.PyCodeCoverageView</tags>
+          <tags>persp.viewSC:org.python.pydev.navigator.view</tags>
+          <tags>persp.viewSC:org.python.pydev.debug.pyunit.pyUnitView</tags>
+          <tags>persp.viewSC:org.eclipse.search.ui.views.SearchView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.console.ConsoleView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ProblemView</tags>
+          <tags>persp.viewSC:org.eclipse.pde.runtime.LogView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.TaskList</tags>
+          <tags>persp.actionSet:org.eclipse.debug.ui.launchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.NavigateActionSet</tags>
+          <tags>persp.actionSet:com.python.pydev.navigate.actionSet</tags>
+          <tags>persp.showIn:org.eclipse.ui.views.ResourceNavigator</tags>
+          <tags>persp.showIn:org.python.pydev.navigator.view</tags>
+          <tags>persp.showIn:org.eclipse.ui.views.ContentOutline</tags>
+          <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_Q1uipSyuEeeyr5Re27-PxA" selectedElement="_Q1uiqCyuEeeyr5Re27-PxA" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_Q1uipiyuEeeyr5Re27-PxA" elementId="topLeft" containerData="1813" selectedElement="_Q1uipyyuEeeyr5Re27-PxA">
+              <tags>newtablook</tags>
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uipyyuEeeyr5Re27-PxA" elementId="org.python.pydev.navigator.view" ref="_Q1vxLSyuEeeyr5Re27-PxA"/>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Q1uiqCyuEeeyr5Re27-PxA" containerData="8187" selectedElement="_Q1uiqSyuEeeyr5Re27-PxA">
+              <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiqSyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.editorss" containerData="6110" ref="_Q1vxUSyuEeeyr5Re27-PxA"/>
+              <children xsi:type="basic:PartStack" xmi:id="_Q1uiqiyuEeeyr5Re27-PxA" elementId="bottom" containerData="3890" selectedElement="_Q1uirCyuEeeyr5Re27-PxA">
+                <tags>newtablook</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiqyyuEeeyr5Re27-PxA" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_Q1wX0iyuEeeyr5Re27-PxA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_Q1uirCyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.console.ConsoleView" ref="_Q1wX0yyuEeeyr5Re27-PxA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_Q1uirSyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_Q1w-7CyuEeeyr5Re27-PxA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_Q1uiriyuEeeyr5Re27-PxA" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_Q1w-7SyuEeeyr5Re27-PxA"/>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="advanced:Perspective" xmi:id="_Q1uiryyuEeeyr5Re27-PxA" elementId="org.eclipse.debug.ui.DebugPerspective" selectedElement="_Q1uisCyuEeeyr5Re27-PxA" label="Debug" iconURI="platform:/plugin/org.eclipse.debug.ui/$nl$/icons/full/eview16/debug_persp.png">
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
+          <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
+          <tags>persp.actionS

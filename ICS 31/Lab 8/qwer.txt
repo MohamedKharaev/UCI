@@ -1,0 +1,18 @@
+** This is a sample command file for the Anteater BandB, Stage I
+PL ***********************************************************
+PL Here is a list of available bedrooms (before adding any!)
+** A well-written program works gracefully with empty lists.
+BL
+PL ***********************************************************
+** Now let's add a bedroom:
+AB 101
+BL
+** And some more:
+AB 104
+** Extra blanks around the command should be ignored
+ab    102
+    AB 201
+    Ab      203
+ BL
+PL Thank you for using the Anteater BandB Reservation System!
+** That's the end of the sample data for Stage I.

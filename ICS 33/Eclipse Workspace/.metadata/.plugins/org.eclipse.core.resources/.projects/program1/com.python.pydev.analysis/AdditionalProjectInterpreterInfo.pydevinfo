@@ -1,0 +1,46 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\ICS 33\Eclipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\program1\com.python.pydev.analysis\v2_indexcache
+ndfa|1492579954757400000|D:\ICS 33\Eclipse Workspace\program1\ndfa.py
+stable|1492562171344900000|D:\ICS 33\Eclipse Workspace\program1\stable.py
+google|1492580556477760000|D:\ICS 33\Eclipse Workspace\program1\google.py
+fa|1492562151537321000|D:\ICS 33\Eclipse Workspace\program1\fa.py
+reachable|1493428356665482000|D:\ICS 33\Eclipse Workspace\program1\reachable.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+5=ndfa
+3=stable
+1=google
+4=fa
+2=reachable
+-- END DICTIONARY
+-- START TREE 1
+23
+add|1|add_query!10@
+all|1|all_prefixes!10@
+com|1|command!19@
+dic|2|dict_as_str!10@dict_as_str!26@
+ext|1|extract_matches!26@
+f|1|f!19@
+fa|1|fa!35@
+fa_|1|fa_as_str!34@
+gra|2|graph!19@graph_as_str!18@
+int|2|interpret!42@interpret!34@
+mak|1|make_match!26@
+mat|1|match!27@
+men|1|men_d!27@
+ndf|1|ndfa_as_str!42@
+pre|1|prefs!27@
+pro|2|process!34@process!42@
+rea|6|read_queries!10@read_match_preferences!26@read_fa!34@read_graph!18@reachable!18@read_ndfa!42@
+sim|1|sims!35@
+sta|1|state!35@
+top|1|top_n!10@
+tra|1|trace_bool!27@
+who|1|who_prefer!26@
+wom|1|women_d!27@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

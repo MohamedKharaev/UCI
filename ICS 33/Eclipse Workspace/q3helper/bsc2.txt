@@ -1,0 +1,31 @@
+# Setup
+c-->from importlib import reload
+c-->import private
+c-->reload(private)
+c-->from private import C
+
+# Test __setattr__
+c-->o=C()
+^-->o.private_x = 'error'-->NameError
+==-->o.__dict__-->{'private_a': 1, 'private_b': 2}
+c-->o.add_more_attributes()
+c-->o.d = 5
+==-->o.__dict__-->{'private_a': 1, 'private_b': 2, 'c': 3, 'd': 5}
+^-->o.private_a = 'error'-->NameError
+^-->o.private_c = 'error'-->NameError
+^-->o.bad_add_more_attributes()-->NameError
+c-->o.bump()
+
+# Test __getattr__
+e-->o.c-->4
+e-->o.d-->5
+^-->o.a-->NameError
+^-->o.b-->NameError
+e-->str(o)-->a=2,b=3,c=4,d=5
+^-->private.f(o)-->NameError
+c-->private.__init__(o)
+==-->o.__dict__-->{'private_a': 2, 'private_b': 3, 'c': 4, 'd': 5, 'z': 'z'}
+
+# Loopholes:  should raise exceptions for 100% private but don't in this implementation
+e-->o.private_a-->2
+e-->o.private_b-->3

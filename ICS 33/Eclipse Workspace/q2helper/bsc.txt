@@ -1,0 +1,110 @@
+# Setup
+c-->from importlib import reload
+c-->import q2solution
+c-->reload(q2solution)
+c-->from q2solution import pages, expand_re
+c-->import re
+
+# Read/Test Regular Expression Patterns (read from repattern files)
+c-->p1a = open('repattern1a.txt').read().rstrip()
+c-->print('   ...Testing the pattern p1a: ',p1a)
+
+# The following text should match the pattern
+!=-->re.match(p1a,'6pm')-->None
+!=-->re.match(p1a,'6:23pm')-->None
+!=-->re.match(p1a,'6:23:15am')-->None
+!=-->re.match(p1a,'12am')-->None
+!=-->re.match(p1a,'11:03am')-->None
+!=-->re.match(p1a,'8:40:04pm')-->None
+
+# The following text should NOT match the pattern
+==-->re.match(p1a,'6')-->None
+==-->re.match(p1a,'6 pm')-->None
+==-->re.match(p1a,'06pm')-->None
+==-->re.match(p1a,'14pm')-->None
+==-->re.match(p1a,'6::pm')-->None
+==-->re.match(p1a,'6:60pm')-->None
+==-->re.match(p1a,'6:111pm')-->None
+==-->re.match(p1a,'6:4pm')-->None
+==-->re.match(p1a,'6: 4:pm')-->None
+==-->re.match(p1a,'6:04:7pm')-->None
+==-->re.match(p1a,'6:23:15:23am')-->None
+
+# Read/Test Regular Expression Patterns (read from repattern files)
+c-->p1b = open('repattern1b.txt').read().rstrip()
+c-->print('   ...Testing the pattern p1b: ',p1b)
+
+# The following text should match the pattern, and provide the shown groups
+==-->re.match(p1b,'6pm').groups()-->('6', None, None, 'pm')
+==-->re.match(p1b,'6:23pm').groups()-->('6', '23', None, 'pm')
+==-->re.match(p1b,'6:23:15am').groups()-->('6', '23', '15', 'am')
+==-->re.match(p1b,'12am').groups()-->('12', None, None, 'am')
+==-->re.match(p1b,'11:03am').groups()-->('11', '03', None, 'am')
+==-->re.match(p1b,'8:40:04pm').groups()-->('8', '40', '04', 'pm')
+
+# The following text should NOT match the pattern
+==-->re.match(p1b,'6')-->None
+==-->re.match(p1b,'6 pm')-->None
+==-->re.match(p1b,'06pm')-->None
+==-->re.match(p1b,'14pm')-->None
+==-->re.match(p1b,'6::pm')-->None
+==-->re.match(p1b,'6:60pm')-->None
+==-->re.match(p1b,'6:111pm')-->None
+==-->re.match(p1b,'6:4pm')-->None
+==-->re.match(p1b,'6: 4:pm')-->None
+==-->re.match(p1b,'6:04:7pm')-->None
+==-->re.match(p1b,'6:23:15:23am')-->None
+
+# Read/Test Regular Expression Patterns (read from repattern files)
+c-->p2a = open('repattern2a.txt').read().rstrip()
+c-->print('   ...Testing the pattern p2a: ',p2a)
+
+# The following text should match the pattern
+==-->re.match(p2a,'3').groups()-->('3', None, None, None)
+==-->re.match(p2a,'1000').groups()-->('1000', None, None, None)
+==-->re.match(p2a,'15-20').groups()-->('15', '-', '20', None)
+==-->re.match(p2a,'2048-4096').groups()-->('2048', '-', '4096', None)
+==-->re.match(p2a,'15:10').groups()-->('15', ':', '10', None)
+==-->re.match(p2a,'2048:100').groups()-->('2048', ':', '100', None)
+==-->re.match(p2a,'2048-496/100').groups()-->('2048', '-', '496', '100')
+==-->re.match(p2a,'15:10/3').groups()-->('15', ':', '10', '3')
+
+# The following text should NOT match the pattern
+==-->re.match(p2a,'03')-->None
+==-->re.match(p2a,'5.8')-->None
+==-->re.match(p2a,'3 4')-->None
+==-->re.match(p2a,'5-08')-->None
+==-->re.match(p2a,'5:08')-->None
+==-->re.match(p2a,'15--30')-->None
+==-->re.match(p2a,'15::30')-->None
+==-->re.match(p2a,'15-30-40')-->None
+==-->re.match(p2a,'5-10:20')-->None
+==-->re.match(p2a,'15:30:40')-->None
+==-->re.match(p2a,'5-10/03')-->None
+
+# Testing pages: the following calls should produce the results shown
+e-->pages('3',False)-->[3]
+e-->pages('5-8',False)-->[5, 6, 7, 8]
+e-->pages('12:3',False)-->[12, 13, 14]
+e-->pages('3,5-8,12:3',False)-->[3, 5, 6, 7, 8, 12, 13, 14]
+e-->pages('5-20/5',False)-->[5, 10, 15, 20]
+e-->pages('12:10/2',False)-->[12, 14, 16, 18, 20]
+e-->pages('8,3-12,4:6',False)-->[3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 8, 9, 9, 10, 11, 12]
+e-->pages('4-12/3,4:6/2',False)-->[4, 4, 6, 7, 8, 10]
+e-->pages('8,3-12,4:6',True)-->[3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+e-->pages('4-12/3,4:6/2',True)-->[4, 6, 7, 8, 10]
+e-->pages('5-8,10-11,3,7:10/3',True)-->[3, 5, 6, 7, 8, 10, 11, 13, 16]
+^-->pages('8-4',True)-->AssertionError
+e-->pages('1000-1000',True)-->[1000]
+
+
+# Testing expand_re
+c-->pd = dict(digit=r'\d', integer=r'[=-]?#digit##digit#*')
+c-->expand_re(pd)
+==-->dict(pd.items())-->{'digit': r'\d', 'integer': r'[=-]?(?:\d)(?:\d)*'}
+c-->pd = dict(int = r'[+-]?\d+', integer_range = r'#int#(..#int#)?', integer_list = r'#integer_range#(?,#integer_range#)*', integer_set = r'{#integer_list#?}')
+c-->expand_re(pd)
+==-->dict(pd.items())-->{'int': '[+-]?\\d+', 'integer_range': '(?:[+-]?\\d+)(..(?:[+-]?\\d+))?', 'integer_list': '(?:(?:[+-]?\\d+)(..(?:[+-]?\\d+))?)(?,(?:(?:[+-]?\\d+)(..(?:[+-]?\\d+))?))*', 'integer_set': '{(?:(?:(?:[+-]?\\d+)(..(?:[+-]?\\d+))?)(?,(?:(?:[+-]?\\d+)(..(?:[+-]?\\d+))?))*)?}'}
+c-->pd = pd = dict(a='correct',b='#a#',c='#b#',d='#c#',e='#d#',f='#e#',g='#f#')
+c-->expand_re(pd)
+==-->dict(pd.items())-->{'a': 'correct', 'b': '(?:correct)', 'c': '(?:(?:correct))', 'd': '(?:(?:(?:correct)))', 'e': '(?:(?:(?:(?:correct))))', 'f': '(?:(?:(?:(?:(?:correct)))))', 'g': '(?:(?:(?:(?:(?:(?:correct))))))'}
